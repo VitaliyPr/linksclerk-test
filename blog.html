@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            if (pageWidth > 2000) {
+                document.documentElement.style.fontSize = '14px';
+            }else if (pageWidth > 992) {
+                let value = (pageWidth * 10 / 1440).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20230705215131"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20230705215131">
+
+
+
+</head>
+
+<body >
+
+  
+
+  <header class="header" id="header">
+  <div class="header__container">
+    <div class="header__body">
+      <div class="header__logo">
+        <a href="/" class="logo">
+          <img src="img/logo.svg" alt="" loading="lazy" class="img-full">
+        </a>
+      </div>
+      <div class="header__menu">
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu">
+  <ul>
+    <li class="menu-item"><a href="about-us.html">About us</a></li>
+    <li class="menu-item menu-item-has-children">
+      <a href="#">Services</a>
+      <ul class="sub-menu">
+        <li id="menu-item-263" class="menu-item"><a href="forum-backlinks.html">Forum backlinks</a></li>
+        <li id="menu-item-772" class="menu-item"><a href="backlinks-from-quora-and-reddit.html">Backlinks from Q&amp;A sites</a></li>
+        <li id="menu-item-1505" class="menu-item"><a href="guest-post-backlinks.html">Guest post &amp; niche edits</a></li>
+      </ul>
+    </li>
+    <li class="menu-item"><a href="seo-vocabulary.html">Seo Vocabulary</a></li>
+    <li class="menu-item"><a href="blog.html">Blog</a></li>
+    <li class="menu-item"><a href="learn.html">Learn</a></li>
+  </ul>
+</div>
+      </div>
+      <div class="header__lang">
+        <div class="lang">
+          <select name="lang" class="lang-select">
+            <option value="en" class="lang-item">EN</option>
+            <option value="ua" class="lang-item">UA</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <section class="top-blog">
+  <div class="top-blog__container">
+    <h2 class="top-blog__title ttitle">Blog</h2>
+    <p class="top-blog__p">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+      interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos.</p>
+    <div class="top-blog__row">
+      <div class="top-blog__col">
+        <a href="blog-page.html" class="top-blog__item">
+          <picture><source srcset="img/blog-big.webp" type="image/webp"><img src="img/blog-big.png" alt="" loading="lazy"></picture>
+          <div class="top-blog__item-body">
+            <div class="date">04.02.2023</div>
+            <h4 class="title">Everything About Redirects and Their Features</h4>
+            <div class="author">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.25 14H2.75054C2.18543 14 1.76812 13.4772 1.98126 12.9965C2.97021 10.7735 5.29355 9.5 7.99988 9.5C10.707 9.5 13.0304 10.7735 14.0193 12.9965C14.2325 13.4772 13.8152 14 13.25 14ZM4.73333 4.99999C4.73333 3.34549 6.1992 1.99999 7.99988 1.99999C9.80138 1.99999 11.2664 3.34549 11.2664 4.99999C11.2664 6.65449 9.80138 7.99999 7.99988 7.99999C6.1992 7.99999 4.73333 6.65449 4.73333 4.99999ZM15.9645 13.727C15.3708 11.2077 13.5138 9.34848 11.0696 8.50473C12.3648 7.54697 13.1202 5.9982 12.8425 4.30245C12.5208 2.3352 10.7389 0.760983 8.58786 0.531483C5.61857 0.214232 3.10006 2.33674 3.10006 4.99999C3.10006 6.41749 3.81543 7.68047 4.93096 8.50473C2.48595 9.34848 0.629731 11.2077 0.0352192 13.727C-0.180373 14.6427 0.623199 15.5 1.64318 15.5H14.3566C15.3774 15.5 16.1809 14.6427 15.9645 13.727Z"
+                  fill="#1F1F1F" />
+              </svg>
+              <span>Name Surname</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="top-blog__col">
+        <h3 class="top-blog__col-title">Recommended Articles</h3>
+        <a href="blog-page.html" class="top-blog__col-recommended">
+          <div class="date">04.02.2023</div>
+          <h4 class="title">Everything About Redirects and Their Features</h4>
+          <div class="author">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.25 14H2.75054C2.18543 14 1.76812 13.4772 1.98126 12.9965C2.97021 10.7735 5.29355 9.5 7.99988 9.5C10.707 9.5 13.0304 10.7735 14.0193 12.9965C14.2325 13.4772 13.8152 14 13.25 14ZM4.73333 4.99999C4.73333 3.34549 6.1992 1.99999 7.99988 1.99999C9.80138 1.99999 11.2664 3.34549 11.2664 4.99999C11.2664 6.65449 9.80138 7.99999 7.99988 7.99999C6.1992 7.99999 4.73333 6.65449 4.73333 4.99999ZM15.9645 13.727C15.3708 11.2077 13.5138 9.34848 11.0696 8.50473C12.3648 7.54697 13.1202 5.9982 12.8425 4.30245C12.5208 2.3352 10.7389 0.760983 8.58786 0.531483C5.61857 0.214232 3.10006 2.33674 3.10006 4.99999C3.10006 6.41749 3.81543 7.68047 4.93096 8.50473C2.48595 9.34848 0.629731 11.2077 0.0352192 13.727C-0.180373 14.6427 0.623199 15.5 1.64318 15.5H14.3566C15.3774 15.5 16.1809 14.6427 15.9645 13.727Z"
+                fill="#1F1F1F" />
+            </svg>
+            <span>Name Surname</span>
+          </div>
+        </a>
+        <a href="blog-page.html" class="top-blog__col-recommended">
+          <div class="date">04.02.2023</div>
+          <h4 class="title">How to Check Backlinks Quality?
+            The Ultimate Guide</h4>
+          <div class="author">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.25 14H2.75054C2.18543 14 1.76812 13.4772 1.98126 12.9965C2.97021 10.7735 5.29355 9.5 7.99988 9.5C10.707 9.5 13.0304 10.7735 14.0193 12.9965C14.2325 13.4772 13.8152 14 13.25 14ZM4.73333 4.99999C4.73333 3.34549 6.1992 1.99999 7.99988 1.99999C9.80138 1.99999 11.2664 3.34549 11.2664 4.99999C11.2664 6.65449 9.80138 7.99999 7.99988 7.99999C6.1992 7.99999 4.73333 6.65449 4.73333 4.99999ZM15.9645 13.727C15.3708 11.2077 13.5138 9.34848 11.0696 8.50473C12.3648 7.54697 13.1202 5.9982 12.8425 4.30245C12.5208 2.3352 10.7389 0.760983 8.58786 0.531483C5.61857 0.214232 3.10006 2.33674 3.10006 4.99999C3.10006 6.41749 3.81543 7.68047 4.93096 8.50473C2.48595 9.34848 0.629731 11.2077 0.0352192 13.727C-0.180373 14.6427 0.623199 15.5 1.64318 15.5H14.3566C15.3774 15.5 16.1809 14.6427 15.9645 13.727Z"
+                fill="#1F1F1F" />
+            </svg>
+            <span>Name Surname</span>
+          </div>
+        </a>
+        <a href="blog-page.html" class="top-blog__col-recommended">
+          <div class="date">04.02.2023</div>
+          <h4 class="title">5 TOP Backlinks Strategies for
+            a New Site</h4>
+          <div class="author">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.25 14H2.75054C2.18543 14 1.76812 13.4772 1.98126 12.9965C2.97021 10.7735 5.29355 9.5 7.99988 9.5C10.707 9.5 13.0304 10.7735 14.0193 12.9965C14.2325 13.4772 13.8152 14 13.25 14ZM4.73333 4.99999C4.73333 3.34549 6.1992 1.99999 7.99988 1.99999C9.80138 1.99999 11.2664 3.34549 11.2664 4.99999C11.2664 6.65449 9.80138 7.99999 7.99988 7.99999C6.1992 7.99999 4.73333 6.65449 4.73333 4.99999ZM15.9645 13.727C15.3708 11.2077 13.5138 9.34848 11.0696 8.50473C12.3648 7.54697 13.1202 5.9982 12.8425 4.30245C12.5208 2.3352 10.7389 0.760983 8.58786 0.531483C5.61857 0.214232 3.10006 2.33674 3.10006 4.99999C3.10006 6.41749 3.81543 7.68047 4.93096 8.50473C2.48595 9.34848 0.629731 11.2077 0.0352192 13.727C-0.180373 14.6427 0.623199 15.5 1.64318 15.5H14.3566C15.3774 15.5 16.1809 14.6427 15.9645 13.727Z"
+                fill="#1F1F1F" />
+            </svg>
+            <span>Name Surname</span>
+          </div>
+        </a>
+        <a href="blog-page.html" class="top-blog__col-recommended">
+          <div class="date">04.02.2023</div>
+          <h4 class="title">Crowd Marketing — One of the Ways
+            for Website Promotion in 2022?</h4>
+          <div class="author">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.25 14H2.75054C2.18543 14 1.76812 13.4772 1.98126 12.9965C2.97021 10.7735 5.29355 9.5 7.99988 9.5C10.707 9.5 13.0304 10.7735 14.0193 12.9965C14.2325 13.4772 13.8152 14 13.25 14ZM4.73333 4.99999C4.73333 3.34549 6.1992 1.99999 7.99988 1.99999C9.80138 1.99999 11.2664 3.34549 11.2664 4.99999C11.2664 6.65449 9.80138 7.99999 7.99988 7.99999C6.1992 7.99999 4.73333 6.65449 4.73333 4.99999ZM15.9645 13.727C15.3708 11.2077 13.5138 9.34848 11.0696 8.50473C12.3648 7.54697 13.1202 5.9982 12.8425 4.30245C12.5208 2.3352 10.7389 0.760983 8.58786 0.531483C5.61857 0.214232 3.10006 2.33674 3.10006 4.99999C3.10006 6.41749 3.81543 7.68047 4.93096 8.50473C2.48595 9.34848 0.629731 11.2077 0.0352192 13.727C-0.180373 14.6427 0.623199 15.5 1.64318 15.5H14.3566C15.3774 15.5 16.1809 14.6427 15.9645 13.727Z"
+                fill="#1F1F1F" />
+            </svg>
+            <span>Name Surname</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="list">
+  <div class="list__container">
+    <div class="list__body">
+      <a href="blog-page.html" class="item">
+        <picture><source srcset="img/blog-item.webp" type="image/webp"><img src="img/blog-item.png" alt="" loading="lazy"></picture>
+        <div class="item__body">
+          <h2>Everything About Redirects and Their Features</h2>
+        </div>
+      </a>
+      <a href="blog-page.html" class="item">
+        <picture><source srcset="img/blog-item2.webp" type="image/webp"><img src="img/blog-item2.png" alt="" loading="lazy"></picture>
+        <div class="item__body">
+          <h2>Analyzing Competitors in Link Building: How to Do It Correctly? </h2>
+        </div>
+      </a>
+      <a href="blog-page.html" class="item">
+        <picture><source srcset="img/blog-item3.webp" type="image/webp"><img src="img/blog-item3.png" alt="" loading="lazy"></picture>
+        <div class="item__body">
+          <h2>What is the Difference Between Dofollow and Nofollow Links?</h2>
+        </div>
+      </a>
+      <a href="blog-page.html" class="item">
+        <picture><source srcset="img/blog-item4.webp" type="image/webp"><img src="img/blog-item4.png" alt="" loading="lazy"></picture>
+        <div class="item__body">
+          <h2>Crowd Marketing — One of the Ways for Website Promotion...</h2>
+        </div>
+      </a>
+      <a href="blog-page.html" class="item">
+        <picture><source srcset="img/blog-item5.webp" type="image/webp"><img src="img/blog-item5.png" alt="" loading="lazy"></picture>
+        <div class="item__body">
+          <h2>5 Facts About Backlinks</h2>
+        </div>
+      </a>
+      <a href="blog-page.html" class="item">
+        <picture><source srcset="img/blog-item6.webp" type="image/webp"><img src="img/blog-item6.png" alt="" loading="lazy"></picture>
+        <div class="item__body">
+          <h2>How to Check Backlinks Quality? The Ultimate Guide</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+   
+  </main>
+  <div class="modal" id="modal_service">
+  <h2 class="modal__title">Order service</h2>
+  <form action="/" class="form">
+    <div class="form__row">
+      <div class="form__item">
+        <label for="" class="form__label">Your name</label>
+        <input type="text" name="name" class="form__input" placeholder="Matthew"> 
+      </div>
+      <div class="form__item">
+        <label for="" class="form__label">Telegram or E-mail</label>
+        <input type="email" name="email" class="form__input" placeholder="Matthew"> 
+      </div>
+    </div>
+    <div class="form__row">
+      <div class="form__item">
+        <label for="" class="form__label">Package</label>
+        <select name="package" class="form__select">
+          <option value="1">Select Package</option>
+          <option value="1">Test</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <label for="" class="form__label">Promo code</label>
+        <input type="email" name="promo_code" class="form__input" placeholder="Promo code" id="promocode"> 
+        <button class="btn btn_promocode">Use promo code</button>
+      </div>
+    </div>
+    <div class="form__row">
+      <h5>The total cost:<span><input type="text" id="price" readonly="readonly" size="1" value="">$</span></h5>
+    </div>
+    <div class="form__row">
+      <div class="form__item">
+        <label for="text" class="form__label">Additional information</label>
+        <textarea name="text" id="input" class="form__textarea" placeholder="Hi! Is it possible...."></textarea>
+      </div>
+    </div>
+    <button type="submit" class="form__btn btn btn_green">Submit</button>
+  </form>
+</div>
+  <footer class="footer">
+  <div class="footer__top">
+    <div class="footer__container">
+      <div class="footer__top-col">
+        <a href="/" class="footer__logo">
+          <img src="img/logo-footer.svg" alt="" loading="lazy" class="img-full">
+        </a>
+        <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+          odio mattis.</p>
+      </div>
+      <div class="footer__top-col">
+        <div class="footer__nav">
+          <div class="footer__nav-wrp">
+            <h4 class="footer__nav-title">Company</h4>
+            <a href="index.html" class="footer__nav-link">Home</a>
+            <a href="about-us.html" class="footer__nav-link">About Us</a>
+            <a href="#" class="footer__nav-link">Services</a>
+          </div>
+          <div class="footer__nav-wrp">
+            <h4 class="footer__nav-title">Useful links</h4>
+            <a href="seo-vocabulary.html" class="footer__nav-link">Seo Vocabulary</a>
+            <a href="blog.html" class="footer__nav-link">Blog</a>
+            <a href="learn.html" class="footer__nav-link">Learn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__top-col">
+        <div class="social">
+          <a href="#" class="social__link">
+            <picture><source srcset="img/footer/telegram-footer.webp" type="image/webp"><img src="img/footer/telegram-footer.png" alt="" loading="lazy" class="img-full"></picture>
+          </a>
+          <a href="#" class="social__link">
+            <picture><source srcset="img/footer/facebook-footer.webp" type="image/webp"><img src="img/footer/facebook-footer.png" alt="" loading="lazy" class="img-full"></picture>
+          </a>
+          <a href="#" class="social__link">
+            <picture><source srcset="img/footer/fiverr-footer.webp" type="image/webp"><img src="img/footer/fiverr-footer.png" alt="" loading="lazy" class="img-full"></picture>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__container">
+      <div class="footer__bottom-col">
+        <a href="#" class="footer__bottom-link">Terms of Service</a>
+        <a href="#" class="footer__bottom-link">Privacy Policy</a>
+        <a href="#" class="footer__bottom-link">Cookies policy</a>
+      </div>
+      <div class="footer__bottom-col">
+        <p>Copyright © 2023 - Linksclerk | All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+   <!-- END main page -->
+
+  <script src="js/plugins/plugins.min.js?_v=20230705215131"></script>
+
+<script src="js/app.min.js?_v=20230705215131"></script>
+ 
+</body>
+
+</html>
