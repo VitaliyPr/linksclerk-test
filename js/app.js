@@ -46,7 +46,7 @@ for (var i = 0; i < submenu_btn.length; i++) {
 if (document.querySelector('[data-services]')) {
   const services_sl = new Swiper('[data-services]', {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 16,
     autoHeight: true,
 		loop: true,
     speed: 800,
@@ -97,7 +97,7 @@ if (document.querySelector('[data-reviews]')) {
 if (document.querySelector('[data-team]')) {
   const team_sl = new Swiper('[data-team]', {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 20,
     autoHeight: false,
 		loop: true,
     speed: 800,
