@@ -47,7 +47,7 @@ if (document.querySelector('[data-services]')) {
   const services_sl = new Swiper('[data-services]', {
     slidesPerView: 1,
     spaceBetween: 16,
-    autoHeight: true,
+    autoHeight: false,
 		loop: true,
     speed: 800,
     navigation: false,

@@ -98,11 +98,6 @@ b {
     margin: 0 3rem;
   }
 }
-@media (min-width: 600px) and (max-width: 992px) {
-  [class*=__container] {
-    margin: 0 5rem;
-  }
-}
 @media (min-width: 992px) {
   [class*=__container] {
     max-width: 128rem;
@@ -246,6 +241,13 @@ svg {
   border: 1px solid var(--white);
   background-color: var(--white);
   color: var(--black);
+}
+@media (any-hover: hover) {
+  .btn_white:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 
 ol.list {
@@ -450,6 +452,7 @@ input[type=number] {
   }
 }
 .lang-select {
+  cursor: pointer;
   border: none;
   height: unset;
   font-family: Oxygen;
@@ -949,13 +952,18 @@ input[type=number] {
 }
 .hero__container {
   position: relative;
-  padding: 8rem 0 0;
-  margin-top: 12.6rem;
+  padding: 5rem 0 0;
+  margin-top: 8.4rem;
+}
+@media (min-width: 600px) {
+  .hero__container {
+    margin-top: 12.6rem;
+  }
 }
 @media (min-width: 992px) {
   .hero__container {
     padding: 12.5rem 0;
-    margin-top: 10.1rem;
+    margin-top: 10.9rem;
   }
 }
 @media (min-width: 992px) {
@@ -973,28 +981,32 @@ input[type=number] {
     margin-bottom: 5rem;
   }
 }
+@media (min-width: 600px) and (max-width: 992px) {
+  .hero__body {
+    max-width: 44rem;
+  }
+}
 @media (min-width: 992px) {
   .hero__body {
     max-width: 63.2rem;
+    min-height: 38rem;
   }
 }
 .hero__body-title:not(:last-child) {
   margin-bottom: 1.5rem;
-}
-.hero__body-p:not(:last-child) {
-  margin-bottom: 5rem;
 }
 @media (min-width: 600px) {
   .hero__body-p {
     max-width: 54rem;
   }
   .hero__body-p:not(:last-child) {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 992px) {
   .hero__body-p_main {
     max-width: 42rem;
+    min-height: unset;
   }
 }
 .hero__body-btns {
@@ -1020,6 +1032,13 @@ input[type=number] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-column-gap: 3rem;
+       -moz-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero__body-btns {
     -webkit-column-gap: 6rem;
        -moz-column-gap: 6rem;
             column-gap: 6rem;
@@ -1052,10 +1071,34 @@ input[type=number] {
   width: 100%;
   height: auto;
 }
+@media (max-width: 600px) {
+  .hero__picture {
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .hero__picture {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -7rem;
+    z-index: -1;
+    width: 60%;
+    height: auto;
+  }
+}
 @media (min-width: 992px) {
   .hero__picture {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 71rem;
-    margin-top: -10rem;
+    margin-top: -3rem;
   }
 }
 
@@ -1089,6 +1132,11 @@ input[type=number] {
 @media (min-width: 992px) {
   .section__container_pb {
     padding-bottom: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .section__container_tp {
+    padding-top: 8rem;
   }
 }
 @media (max-width: 992px) {
@@ -1330,11 +1378,21 @@ input[type=number] {
   background: var(--white);
   -webkit-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.05);
           box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.05);
-  padding: 3rem 3.4rem;
+  padding: 2rem 1.5rem;
+}
+@media (min-width: 600px) {
+  .benefits__item {
+    padding: 3rem 3.4rem;
+  }
 }
 .benefits__item-body {
   position: relative;
   z-index: 1;
+}
+@media (max-width: 600px) {
+  .benefits__item-body {
+    max-width: 25rem;
+  }
 }
 .benefits__item-title:not(:last-child) {
   margin-bottom: 0.9rem;
@@ -1446,7 +1504,7 @@ input[type=number] {
 .services__item {
   position: relative;
   color: var(--white);
-  padding: 3.4rem 5rem 4.1rem;
+  padding: 3.4rem 3rem 4.1rem;
   border-radius: 1.8rem;
   background-color: var(--green);
   -webkit-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1464,6 +1522,16 @@ input[type=number] {
   position: absolute;
   right: -2.4rem;
   top: -5.9rem;
+}
+@media (max-width: 600px) {
+  .services__item {
+    min-height: 48rem;
+  }
+}
+@media (min-width: 992px) {
+  .services__item {
+    padding: 3.4rem 5rem 4.1rem;
+  }
 }
 .services__item-title {
   position: relative;
@@ -2796,9 +2864,14 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5.1rem;
-  margin-top: 12.6rem;
+  padding-top: 5rem;
   padding-bottom: 8rem;
+  margin-top: 8.4rem;
+}
+@media (min-width: 600px) {
+  .error-page__container {
+    margin-top: 12.6rem;
+  }
 }
 @media (min-width: 992px) {
   .error-page__container {
@@ -2827,13 +2900,18 @@ input[type=number] {
 }
 
 .top__container {
-  margin-top: 12.6rem;
   padding-top: 5rem;
+  margin-top: 8.4rem;
+}
+@media (min-width: 600px) {
+  .top__container {
+    margin-top: 12.6rem;
+  }
 }
 @media (min-width: 992px) {
   .top__container {
     padding-top: 9.6rem;
-    margin-top: 10.1rem;
+    margin-top: 10.9rem;
   }
 }
 .top__block:not(:last-child) {
@@ -2969,15 +3047,20 @@ input[type=number] {
 }
 
 .seo-page__container {
-  margin-top: 12.6rem;
   padding-top: 3rem;
   padding-bottom: 8rem;
+  margin-top: 8.4rem;
+}
+@media (min-width: 600px) {
+  .seo-page__container {
+    margin-top: 12.6rem;
+  }
 }
 @media (min-width: 992px) {
   .seo-page__container {
     padding-top: 4.8rem;
     padding-bottom: 12.5rem;
-    margin-top: 10.1rem;
+    margin-top: 10.9rem;
   }
 }
 .seo-page__head:not(:last-child) {
@@ -3154,13 +3237,18 @@ input[type=number] {
 }
 
 .top-blog__container {
-  margin-top: 12.6rem;
   padding-top: 5rem;
+  margin-top: 8.4rem;
+}
+@media (min-width: 600px) {
+  .top-blog__container {
+    margin-top: 12.6rem;
+  }
 }
 @media (min-width: 992px) {
   .top-blog__container {
     padding-top: 9.6rem;
-    margin-top: 10.1rem;
+    margin-top: 10.9rem;
   }
 }
 .top-blog__title:not(:last-child) {
@@ -3425,14 +3513,19 @@ input[type=number] {
 }
 
 .blog-page__container {
-  margin-top: 12.6rem;
   padding-top: 5rem;
   padding-bottom: 4.6rem;
+  margin-top: 8.4rem;
+}
+@media (min-width: 600px) {
+  .blog-page__container {
+    margin-top: 12.6rem;
+  }
 }
 @media (min-width: 992px) {
   .blog-page__container {
     padding-top: 9.6rem;
-    margin-top: 10.1rem;
+    margin-top: 10.9rem;
   }
 }
 .blog-page__head:not(:last-child) {
